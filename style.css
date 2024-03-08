@@ -124,3 +124,24 @@ table {
   border-spacing: 0;
 }
 /* ---Reset CSS--- */
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 1536px;
+  display: flex;
+}
+
+.cover {
+  width: 33%;
+}
+
+.content {
+  flex-grow: 1;
+}
