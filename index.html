@@ -26,7 +26,7 @@
           deepest dreams. Sign up <em>now</em> to get started</p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <form>
+      <form id="sign-up-form">
         <div class="card">
           <h1>Let's dot this!</h1>
           <div class="form-inputs">
@@ -54,6 +54,7 @@
               <div class="form-item">
                 <label for="password">password</label>
                 <input required type="password" id="password">
+                <span class="input-error">*Passwords do not match</span>
               </div>
               <div class="form-item">
                 <label for="confirm-password">Confirm Password</label>
@@ -73,6 +74,8 @@
       </form>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

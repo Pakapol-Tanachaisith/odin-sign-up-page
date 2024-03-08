@@ -275,6 +275,21 @@ body,
 .form-item > input:focus {
   box-shadow: 0 1px 2px #93c5fd;
 }
+.form-item > input.error {
+  border-color: red;
+  outline-color: red;
+}
+.input-error {
+  font-size: 14px;
+  margin-top: 3px;
+  color: red;
+  display: none;
+}
+.form-item > input.error + .input-error {
+  border-color: red;
+  outline-color: red;
+  display: inline;
+}
 
 div.card + div {
   padding: 36px 56px;
