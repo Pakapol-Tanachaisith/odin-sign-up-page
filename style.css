@@ -164,6 +164,7 @@ body,
   background-image: url(assets/images/leaf.jpg);
   background-size: cover;
   position: relative;
+  flex-shrink: 0;
 }
 
 .cover .image-credit {
@@ -207,4 +208,94 @@ body,
 
 .content {
   flex-grow: 1;
+  padding-top: 75px;
+  background-color: #f5f5f4;
+}
+
+.content .marketing-text {
+  padding: 0 56px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content .marketing-text p {
+  width: 80%;
+}
+.content .marketing-text p:first-child {
+  margin-bottom: 24px;
+}
+
+.content .marketing-text em {
+  font-style: italic;
+}
+
+.content .card {
+  margin-top: 54px;
+  padding: 32px 56px;
+  background-color: #fafafa;
+  box-shadow: 0px 5px 5px #d4d4d4;
+}
+
+.content .card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.form-inputs {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-row {
+  display: flex;
+  gap: 72px;
+}
+
+.form-item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-item > label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #57534e;
+  margin-bottom: 8px;
+}
+.form-item > input {
+  border: 1px solid #e5e7eb;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background: transparent;
+  outline-color: #3b82f6;
+}
+.form-item > input:focus {
+  box-shadow: 0 1px 2px #93c5fd;
+}
+
+div.card + div {
+  padding: 36px 56px;
+}
+
+.sign-up-btn {
+  border: none;
+  background-color: #596d48;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 45px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div.card + div p {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+div.card + div p > a {
+  color: #596d48;
 }
